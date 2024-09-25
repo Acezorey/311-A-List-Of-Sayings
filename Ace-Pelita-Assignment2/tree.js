@@ -34,4 +34,6 @@ Functions to be implemented:
 - Successor(word)
 - Insert(word)
 - BalanceTree(root) (?)
+- MeHua(word)
+- WithWord(word)
 */
