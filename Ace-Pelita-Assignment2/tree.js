@@ -29,4 +29,13 @@ const root = null;
 const englishList = [];
 const japaneseList = [];
 
-
+/*
+Functions to be implemented:
+- Member(saying)
+- First()
+- Last()
+- Predecessor(saying)
+- Successor(saying)
+- Insert(saying)
+- BalanceTree(saying) (?)
+*/
