@@ -10,6 +10,7 @@ Six parameters:
 - right: Node to the right of node
 - left: Node to the left of node
 */
+//Implemented by Ace
 class Saying {
     constructor(japanese, english, englishex, japanex){
         this.japanese = japanese;
