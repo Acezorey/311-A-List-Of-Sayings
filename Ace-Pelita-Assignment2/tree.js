@@ -27,11 +27,11 @@ let root = null;
 
 /*
 Functions to be implemented:
-- Member(saying)
+- Member(word)
 - First()
 - Last()
-- Predecessor(saying)
-- Successor(saying)
-- Insert(saying)
-- BalanceTree(saying) (?)
+- Predecessor(word)
+- Successor(word)
+- Insert(word)
+- BalanceTree(root) (?)
 */
