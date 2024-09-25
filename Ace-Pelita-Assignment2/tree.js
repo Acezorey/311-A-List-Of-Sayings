@@ -121,24 +121,100 @@ class BinarySearchTree {
     }
 
     findNode(currentNode, japanese){
-        currentNode = this.root;
-
         if(currentNode === null){
             return null;
         }
         if(currentNode.saying.japanese === japanese){
-            return currentNode.japanese;
+            return currentNode;
         }
-        if(currentNode.japanese < japanese){
-            currentNode = currentNode.left;
-            return this.findNode(currentNode, japanese);
+        if(japanese < currentNode.saying.japanese ){
+            return this.findNode(currentNode.left, japanese);
         }
-        if(currentNode.japanese > japanese){
-            currentNode = currentNode.right;
-            return this.findNode(currentNode, japanese);
+        if(japanese > currentNode.japanese ){
+            return this.findNode(currentNode.right, japanese);
         }
     }
 
+    predecessor(japanese) {
+        const node = this.findNode(this.root, japanese);
+        if (node === null) return null;
+
+        if (node.left !== null) {
+            return this.findMax(node.left).saying;
+        }
+    
+        let predecessor = null;
+        let ancestor = this.root;
+        while (ancestor !== null && ancestor !== node) {
+            if (japanese > ancestor.saying.japanese) {
+                predecessor = ancestor;
+                ancestor = ancestor.right;
+            } else {
+                ancestor = ancestor.left;
+            }
+        }
+        return predecessor !== null ? predecessor.saying : null;
+    }
+
+    successor(japanese) {
+        const node = this.findNode(this.root, japanese);
+        if (node === null) return null;
+
+        if (node.right !== null) {
+            return this.findMin(node.right).saying;
+        }
+
+        let successor = null;
+        let ancestor = this.root;
+        while (ancestor !== null && ancestor !== node) {
+            if (japanese < ancestor.saying.japanese) {
+                successor = ancestor;
+                ancestor = ancestor.left;
+            } else {
+                ancestor = ancestor.right;
+            }
+        }
+        return successor !== null ? successor.saying : null;
+    }
+
+    MeHua(word) {
+        const result = [];
+        this.searchByJapanese(this.root, word, result);
+        return result;
+    }
+
+    searchByJapanese(currentNode, word, result) {
+        if (currentNode === null) {
+            return;
+        }
+
+        if (currentNode.saying.japanese.includes(word)) {
+            result.push(currentNode.saying);
+        }
+
+        this.searchByJapanese(currentNode.left, word, result);
+        this.searchByJapanese(currentNode.right, word, result);
+    }
+
+    WithWord(word) {
+        const result = [];
+        this.searchByEnglish(this.root, word, result);
+        return result;
+    }
+
+    searchByEnglish(currentNode, word, result) {
+        if (currentNode === null) {
+            return;
+        }
+
+        if (currentNode.saying.english.includes(word)) {
+            result.push(currentNode.saying);
+        }
+
+        this.searchByEnglish(currentNode.left, word, result);
+        this.searchByEnglish(currentNode.right, word, result);
+    }
+    
   
 
 } // Closes class BST
@@ -147,11 +223,14 @@ class BinarySearchTree {
 const bst = new BinarySearchTree();
 sayings.forEach(saying => bst.insert(saying));
 
-/*test runs
+//test runs
 console.log(bst.member('Nana korobi, ya oki')); // true
-console.log("First saying:", bst.first()); // First saying
-console.log("Last saying:", bst.last()); // Last saying
-*/
+console.log('First saying:', bst.first()); // First saying
+console.log('Last saying:', bst.last()); // Last saying
+console.log('Predecessor: ', bst.predecessor('Baka mo ichi-gei')); // predecessor test
+console.log('Successor: ', bst.successor('Baka mo ichi-gei')); // successor test
+console.log('Mehua: ', bst.MeHua('Neko'));
+console.log('WithWord: ', bst.WithWord('monkeys'));
 
 
 Functions to be implemented:
