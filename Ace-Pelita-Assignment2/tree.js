@@ -7,6 +7,8 @@ Six parameters:
 - english: English translation of saying
 - englishex: English explanation
 - japanex: Japanese (Romanji) translation of Saying
+- right: Node to the right of node
+- left: Node to the left of node
 */
 class Saying {
     constructor(japanese, english, englishex, japanex){
