@@ -22,12 +22,7 @@ class Saying {
 }
 
 //Starting root of the tree
-const root = null;
-
-
-//Lists to be used by functions MeHua(word) and WithWord(word)
-const englishList = [];
-const japaneseList = [];
+let root = null;
 
 /*
 Functions to be implemented:
