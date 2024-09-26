@@ -10,7 +10,8 @@ Six parameters:
 - right: Node to the right of node
 - left: Node to the left of node
 */
-//Implemented by Ace
+
+//~~~~~ Implemented by Ace ~~~~~
 class Saying {
     constructor(japanese, english, englishex, japanex){
         this.japanese = japanese;
@@ -19,7 +20,10 @@ class Saying {
         this.japanex = japanex;
     }
 }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+//~~~~~ Implemented by Pelita ~~~~~
 class TreeNode {
     constructor(saying) {
         this.saying = saying;
@@ -39,7 +43,6 @@ const sayings = [
     new Saying ('Rakka eda ni kaerazu, hakyou futatabi terasazu', 'Fallen blossom doesn\'t return to the branch, a broken mirror can not be made to shine', 'What\'s done is done', 'Sugi ta koto wa sugi ta'),
     new Saying ('Juu-nin to-iro', 'Ten people, ten colours', 'Everyone has their own tastes', 'Minna sorezore konomi ga ari masu'),
 ]
-
 class BinarySearchTree {
     constructor() {
         this.root = null;
@@ -214,16 +217,16 @@ class BinarySearchTree {
         this.searchByEnglish(currentNode.left, word, result);
         this.searchByEnglish(currentNode.right, word, result);
     }
-    
-  
-
-} // Closes class BST
-
-
+}
+//Creating tree
 const bst = new BinarySearchTree();
 sayings.forEach(saying => bst.insert(saying));
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//test runs
+
+
+
+//~~~~~ Testing Methods ~~~~~
 console.log(bst.member('Nana korobi, ya oki')); // true
 console.log('First saying:', bst.first()); // First saying
 console.log('Last saying:', bst.last()); // Last saying
@@ -231,16 +234,4 @@ console.log('Predecessor: ', bst.predecessor('Baka mo ichi-gei')); // predecesso
 console.log('Successor: ', bst.successor('Baka mo ichi-gei')); // successor test
 console.log('Mehua: ', bst.MeHua('Neko'));
 console.log('WithWord: ', bst.WithWord('monkeys'));
-
-
-Functions to be implemented:
-- Member(word) // Pelita
-- First() // Pelita
-- Last() // Pelita
-- Predecessor(word)
-- Successor(word)
-- Insert(word)
-- BalanceTree(root) (?)
-- MeHua(word)
-- WithWord(word)
-*/
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~

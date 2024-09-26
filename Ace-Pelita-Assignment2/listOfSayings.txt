@@ -1,66 +1,58 @@
 This is a list of all of the sayings we used in this assignment
 Both in English and Japanese (Romanji)
 // Pelita Felicitas
-const Saying = [
-    {
-        japanese: 'Nana korobi, ya oki',
-        english: 'Fall down seven times, get up eight times',
-        englishex: 'Persevere.',
-        japanex: 'Hozon suru'
-    },
-    {
-        japanese: 'Saru mo ki kara ochiru',
-        english: 'Even monkeys fall from trees',
-        englishex: 'Everyone makes mistakes'
-        japanex: 'Dare mo ga machigai wa com shi masu.'
-        
-    },
-    {
-        japanese: 'Sumeba miyako',
-        english: 'If residing, capital/metropolis',
-        englishex: 'Wherever you live, you come to love it',
-        japanex: 'Doko ni sun de i te mo sore wa aisuru you ni nari masu'
-    }
-    {
-        japanese: 'Baka mo ichi-gei',
-        english: 'Even a fool has one talent',
-        englishex: 'Anyone can be good at something',
-        japanex: 'Dare demo nani ka tokui na koto ga dekiru'
-    },
-    {
-        japanese: 'Juu-nin to-iro',
-        english: 'Ten people, ten colours',
-        englishex: 'Everyone has their own tastes',
-        japanex: 'Minna sorezore konomi ga ari masu'
-    },
-    {
-        japanese: 'Isseki ni chou',
-        english: 'One stone, two birds',
-        englishex: 'Accomplishing two things at once',
-        japanex: 'Doujini ni tsu no kotonaru koto wa nashitogeru'
-    },
-    {
-        japanese: 'Neko ni koban',
-        english: 'A coin to a cat',
-        englishex: 'Don\'t offer things to people who are incapable of appreciating them.',
-        japanex: 'Sorera wa hyouka deki nai hitoodoriji ni wa mono wa teikyou shi nai de kudasai.'
-    },
-    {
-        japanese: 'Ame futte ji katamaru',
-        english: 'Rained on ground hardens',
-        englishex: 'Adversity builds character',
-        japanex: 'Gyakkyou wa jinkaku wa keisei suru'
-    },
-    {
-        japanese: 'Deru kugi wa utareru',
-        english: 'Sticking out nail be hammered',
-        englishex: 'Those who stand out or are different may face pressure to conform',
-        japanex: 'kiwadatsu mono ya kotonaru mono wa, douchou suru atsuryoku ni chokumen suru kanousei ga ari masu'
-    },
-    {
-        japanese: 'Rakka eda ni kaerazu, hakyou futatabi terasazu',
-        english: 'Fallen blossom doesn\'t return to the branch, a broken mirror can not be made to shine',
-        englishex: 'What\'s done is done',
-        japanex: 'Sugi ta koto wa sugi ta'
-    }
-]
+
+japanese: 'Nana korobi, ya oki',
+english: 'Fall down seven times, get up eight times',
+englishex: 'Persevere.',
+japanex: 'Hozon suru'
+
+
+japanese: 'Saru mo ki kara ochiru',
+english: 'Even monkeys fall from trees',
+englishex: 'Everyone makes mistakes'
+japanex: 'Dare mo ga machigai wa com shi masu.'
+
+japanese: 'Sumeba miyako',
+english: 'If residing, capital/metropolis',
+englishex: 'Wherever you live, you come to love it',
+japanex: 'Doko ni sun de i te mo sore wa aisuru you ni nari masu'
+
+
+japanese: 'Baka mo ichi-gei',
+english: 'Even a fool has one talent',
+englishex: 'Anyone can be good at something',
+japanex: 'Dare demo nani ka tokui na koto ga dekiru'
+
+
+japanese: 'Juu-nin to-iro',
+english: 'Ten people, ten colours',
+englishex: 'Everyone has their own tastes',
+japanex: 'Minna sorezore konomi ga ari masu'
+
+japanese: 'Isseki ni chou',
+english: 'One stone, two birds',
+englishex: 'Accomplishing two things at once',
+japanex: 'Doujini ni tsu no kotonaru koto wa nashitogeru'
+
+japanese: 'Neko ni koban',
+english: 'A coin to a cat',
+englishex: 'Don\'t offer things to people who are incapable of appreciating them.',
+japanex: 'Sorera wa hyouka deki nai hitoodoriji ni wa mono wa teikyou shi nai de kudasai.'
+
+japanese: 'Ame futte ji katamaru',
+english: 'Rained on ground hardens',
+englishex: 'Adversity builds character',
+japanex: 'Gyakkyou wa jinkaku wa keisei suru'
+
+japanese: 'Deru kugi wa utareru',
+english: 'Sticking out nail be hammered',
+englishex: 'Those who stand out or are different may face pressure to conform',
+japanex: 'kiwadatsu mono ya kotonaru mono wa, douchou suru atsuryoku ni chokumen suru kanousei ga ari masu'
+
+japanese: 'Rakka eda ni kaerazu, hakyou futatabi terasazu',
+english: 'Fallen blossom doesn\'t return to the branch, a broken mirror can not be made to shine',
+englishex: 'What\'s done is done',
+japanex: 'Sugi ta koto wa sugi ta'
+
+
