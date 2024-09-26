@@ -223,7 +223,10 @@ const bst = new BinarySearchTree();
 sayings.forEach(saying => bst.insert(saying));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+function input() {
+    const element = document.getElementById("input");
+    const inputText = element.textContent;
+}
 
 
 //~~~~~ Testing Methods ~~~~~
