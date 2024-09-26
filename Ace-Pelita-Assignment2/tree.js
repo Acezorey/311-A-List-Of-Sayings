@@ -226,16 +226,23 @@ sayings.forEach(saying => bst.insert(saying));
 function input() {
     const element = document.getElementById("input");
     const inputText = element.textContent;
-    
+
 }
 
 
 //~~~~~ Testing Methods ~~~~~
+console.log("Testing member() method, should return 'True'");
 console.log(bst.member('Nana korobi, ya oki')); // true
+console.log("Testing first() method, should return first saying in BST");
 console.log('First saying:', bst.first()); // First saying
+console.log("Testing last() method, should return last saying in BST");
 console.log('Last saying:', bst.last()); // Last saying
+console.log("Testing predecessor(saying) method, should return the saying stored in the node preceding the target node");
 console.log('Predecessor: ', bst.predecessor('Baka mo ichi-gei')); // predecessor test
+console.log("Testing successor(saying) method, should return the saying stored in the node succeeding the target node");
 console.log('Successor: ', bst.successor('Baka mo ichi-gei')); // successor test
+console.log("Testing MeHua(word) method, should return all Japanese sayings with the word 'Neko' in it");
 console.log('Mehua: ', bst.MeHua('Neko'));
+console.log("Testing WithWord(word) method, should return with all sayings with the word 'monkeys' in its English translation");
 console.log('WithWord: ', bst.WithWord('monkeys'));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~
